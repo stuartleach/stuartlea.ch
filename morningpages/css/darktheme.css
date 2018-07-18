@@ -1,0 +1,29 @@
+body {
+  background-color: #222;
+}
+
+#user-input {
+	color: #ddd;
+}
+
+#menu {
+	background: #8A898B;
+}
+
+#prompt {
+	/*color:   #383831;*/
+	color: #878688;
+}
+
+#stats {
+	background-color: #777678;
+}
+
+#stats .btn-default {
+	background-color: #A29FA9;
+}
+
+#done {
+	background-color: #2C2C2E;
+	color: #404145;
+}

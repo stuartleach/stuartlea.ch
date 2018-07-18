@@ -1,0 +1,20 @@
+body {
+  background-color: #ECECEC;
+}
+
+#user-input {
+	color: #383831;
+}
+
+#menu {
+	background: #C9C9C9;
+}
+
+#stats {
+	background-color: #D3D3D3;
+}
+
+#done {
+	background-color: #BDBDBD;
+	color: #626262;
+}

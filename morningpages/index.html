@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <title>Morning Pages</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/darktheme.css" id="theme">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a onClick="changeTheme()">
+                    <li id="change-theme">light theme</li>
+                </a>
+                <a onClick="hideProgressBar()">
+                    <li id="hideProgressBar">hide progress bar</li>
+                </a>
+            </ul>
+        </div>
+        </input>
+    </nav>
+    <div class="vertical-center">
+        <div class="stats-container">
+            <div id="stats">
+                <h5>Morning pages completed.</h5>
+                <ul>
+                    <li>Word count: <span id="finalWordCount"></span></li>
+                    <li>Character count: <span id="finalCharCount"></span></li>
+                    <li>Time elapsed: <span id="timeElapsed"></span></li>
+                    <li>
+                        <dfn data-info="excludes 100 most common English words">Ten most frequently used words:</dfn>
+                        <ul>
+                            <div id="mostCommonWords"></div>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default" id="downloadButton">download as .txt</button>
+                    <button type="button" class="btn btn-default float-right" id="resetButton">reset</button>
+                </div>
+            </div>
+        </div>
+        <div class="input-wrapper container" data-text="">
+            <form id="myForm">
+                <input class="mp" id="user-input" type="text" placeholder="10,000 characters. Go."></input>
+            </form>
+            <div id="characterCount" class="">0</div>
+            <div id="prompt"></div>
+            <progress max="10000" id="progress" value=""></progress>
+            <button class="btn btn-default" id="done">done</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+    window.ga = function() { ga.q.push(arguments) };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-32607426-2', 'auto');
+    ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="text/javascript" src="FileSaver.js/FileSaver.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
